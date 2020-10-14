@@ -2,7 +2,7 @@
 
 namespace CiteDemo {
     class Exercise5 {
-        static void Main() {
+        static void Min() {
             // Enter input as string
             Console.WriteLine("Enter a");
             string aInput = Console.ReadLine();
