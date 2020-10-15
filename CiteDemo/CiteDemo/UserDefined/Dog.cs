@@ -1,8 +1,7 @@
-﻿
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace CiteDemo.UserDefined {
-    class Dog {
+    class Dog : Animal {
         public Dog(string breed) {
             Breed = breed;
             Color = "Brown";
@@ -55,6 +54,6 @@ namespace CiteDemo.UserDefined {
         public string Color { get; set; } // Read-Write property
 
         public string Breed { get; } // ReadOnly property
-
+        
     }
 }

@@ -9,7 +9,7 @@ using System.Collections.Generic;
 namespace CiteDemo {
 
     class Program {
-        static void Main() {
+        static void Min() {
             Dog bruno = new Dog("German Shephard");// bruno is an object of the dog class
             bruno.Feed(5);
             bruno.Starve(2);
@@ -20,13 +20,30 @@ namespace CiteDemo {
             Dog bingo = new Dog("Bull Dog");
             bingo.Age = 5;
             int ageOfTheDog = bingo.Age;
+            
             //bingo.Color = "Dark-Brown";
             Console.WriteLine(ageOfTheDog);
             Console.WriteLine(bingo.Color);
 
             Console.WriteLine(bruno.Breed);
             Console.WriteLine(bingo.Breed);
+
+
+            object data = "string";
+            data = 12;
+            data = true;
+            data = 'c';
+            data = new Dog(2);
+
+            Animal animal = new Dog(2);
+
+            //DoSomething(bingo);
+
             Console.ReadLine();           
+        }
+
+        static void DoSomething(Animal animal) {
+
         }
     }
 }
